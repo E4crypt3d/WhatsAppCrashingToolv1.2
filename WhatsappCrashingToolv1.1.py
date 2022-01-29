@@ -11,10 +11,6 @@ with open('crasher.txt', 'r') as mobile:
     reading = mobile.readlines()
     conv_str = str(reading)
     crashing_text = conv_str.strip("[]'")
-with open('pc_crasher.txt', 'r') as pc:
-    pc_reading = pc.readlines()
-    pc_string = str(pc_reading)
-    pc_crasher = pc_string.strip("[]'")
 
 def whatsapp_crashingmain():
     if hpcomt.Name() == 'Windows':
