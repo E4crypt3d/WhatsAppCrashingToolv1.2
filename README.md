@@ -1,0 +1,1 @@
+# WhatsAppCrashingToolv1.1
