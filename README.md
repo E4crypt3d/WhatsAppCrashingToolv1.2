@@ -2,6 +2,8 @@
 This is just for Educational Purpose
 
 WhatsApp Crashing tool using python 3
+Works fine with termux
+
 
 This was created using these modules
 1. os
